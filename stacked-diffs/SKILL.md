@@ -1,6 +1,6 @@
 ---
 name: stacked-diffs
-description: Guidance for planning and using stacked diffs with Graphite. Use when creating a stack, splitting a large code change into reviewer-friendly diffs, deciding diff boundaries, preserving git move semantics, or explaining stacked-diff anti-patterns.
+description: Guidance for planning and using stacked diffs. Use when creating a stack, splitting a large code change into reviewer-friendly diffs, deciding diff boundaries, preserving git move semantics, or explaining stacked-diff anti-patterns.
 ---
 
 Stacked diffs are table stakes because writing code is easy, especially with LLMs. Reading and reviewing code remains hard. Stacked diffs help to structure changes in a reviewer-friendly way.
