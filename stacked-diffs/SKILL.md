@@ -7,7 +7,7 @@ Stacked diffs are table stakes because writing code is easy, especially with LLM
 
 ## How to think about stacked diffs
 
-When creating a stacked diff, you should think about what you are trying to achieve. The goal of the whole stack is to achieve this goal. The goal of a single diff inside the stack is to achieve an atomic piece of progress towards the goal.
+When creating a stacked diff, you should think about what you are trying to achieve. The goal of the whole stack is to achieve this goal. The goal of a single diff inside the stack is to achieve an atomic piece of progress towards the goal. Before choosing diff boundaries, define how a reviewer proves each diff is safe. Make proving a diff safe as easy as possible.
 
 If possible, any change in a stack should be mergeable as-is. For example, when adding a new lint rule, the pattern should be fixed in the first diff and the lint rule added in the second diff. Why even separate diffs in this example? Because the reviewer can choose a different mode for the different diffs. "configuration-checking" mode for the lint rule and "scanning-similar-changes" mode for the code changes.
 
