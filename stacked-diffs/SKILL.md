@@ -5,6 +5,8 @@ description: Guidance for planning and using stacked diffs. Use when creating a 
 
 Stacked diffs are table stakes because writing code is easy, especially with LLMs. Reading and reviewing code remains hard. Stacked diffs help to structure changes in a reviewer-friendly way.
 
+The optimal diff in a stack has maximum 100 meaingful lines changes. The absolute hard limit for a diff is 300, above that it needs to be split up. To calculate this value, take the highest of additions & deletions. For meaningful lines, we can omit any generated files that won't be reviewed anyway. Examples of this include API schemas, lock files and similar. Only with a good reason we go above the hard limit. Good reasons include: smaller-than-5-line refactor across thousands of files. 
+
 ## How to think about stacked diffs
 
 When creating a stacked diff, you should think about what you are trying to achieve. The goal of the whole stack is to achieve this goal. The goal of a single diff inside the stack is to achieve an atomic piece of progress towards the goal. Before choosing diff boundaries, define how a reviewer proves each diff is safe. Make proving a diff safe as easy as possible.
