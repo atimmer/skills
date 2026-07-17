@@ -1,0 +1,7 @@
+interface:
+  display_name: "Sync JJ Repository"
+  short_description: "Synchronize local and remote JJ revisions"
+  default_prompt: "Use $sync-jj-repository to synchronize this Jujutsu repository with its remote."
+
+policy:
+  allow_implicit_invocation: false

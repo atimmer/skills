@@ -19,3 +19,4 @@ npx skills@latest add atimmer/skills --global
 ## Skills
 
 * **stacked-diffs**, I found that agents don't produce good stacked diffs by default. This skill is my attempt at making them behave.
+* **sync-jj-repository**, synchronizes a Jujutsu repository's local revision chain with its Git-backed remote `main` bookmark.
