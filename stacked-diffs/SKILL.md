@@ -17,6 +17,10 @@ Each diff should have a clear single review purpose. The diff description meant 
 
 Agents should plan the shape of their stack before starting the work. It may change over the course of the work, but an initial plan builds stronger stacks. The shape of the stack can be different from the implementation plan.
 
+## Hard rules
+
+When a piece of code is moved, both the addition and deletion must live in the same change. Moving code is also a valid reason to go over the maximum limits, as the review is fairly easy: "Is this a good move?"
+
 ## Common patterns for stacked diffs
 
 This is a non-exhaustive list of common stacked diffs patterns.
